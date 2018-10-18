@@ -4,7 +4,8 @@
     "private": true,
     "scripts": {
         "dev": "cd src && node api.js",
-        "start": "vue-cli-service serve",
+        "serve": "node static-serve.js",
+        "start": "yarn run build && yarn run serve",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint"
     },
